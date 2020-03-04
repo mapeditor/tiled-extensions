@@ -19,9 +19,9 @@ When you want to add these extensions to your Tiled installation:
 
   (Alternatively, clone this git repository into the extensions directory)
 
-* Restart Tiled.
+* When using a version older than Tiled 1.3.3, restart Tiled.
 
-  (This is currently necessary because Tiled only watches existing scripts for
+  (This was necessary because Tiled only watched existing scripts for
   changes. No restarts are necessary when making changes to existing script
   files, since it will trigger an automatic reloading of the scripts.)
 
