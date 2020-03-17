@@ -33,4 +33,5 @@ have it added to this repository or to the list below!
 
 ## Awesome Tiled Extensions
 
+* [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)
 * [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)
