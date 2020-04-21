@@ -33,5 +33,13 @@ have it added to this repository or to the list below!
 
 ## Awesome Tiled Extensions
 
+### JavaScript
+
 * [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)
 * [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)
+
+### Python
+
+Tiled can also be [extended using Python](https://doc.mapeditor.org/en/stable/manual/python/). While this is limited to adding custom map formats, does not currently work on macOS or the snap releases and requires a specific Python version to be installed on the system, it still may be a valid option especially while some features are still lacking for JavaScript extensions. Here's a list of noteworthy Python extensions:
+
+* [samhocevar/tiled-pico8](https://github.com/samhocevar/tiled-pico8) (see [bjorn/tiled#2781](https://github.com/bjorn/tiled/issues/2781))
