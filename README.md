@@ -37,6 +37,7 @@ have it added to this repository or to the list below!
 
 * [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)
 * [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)
+* [sergkr/tiled-bulk-animations](https://github.com/sergkr/tiled-bulk-animations)
 
 ### Python
 
