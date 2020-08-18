@@ -10,66 +10,72 @@
  * with some adjustments it probably could!
  */
 
+/* global tiled */
+
 function findObjectByName(thing, name) {
-    for (let i = thing.layerCount - 1; i >= 0; i--) {
-        const layer = thing.layerAt(i)
+	for (let i = thing.layerCount - 1; i >= 0; i--) {
+		const layer = thing.layerAt(i);
 
-        if (layer.isGroupLayer) {
-            const obj = findObjectByName(layer, name)
-            if (obj)
-                return obj
-        } else if (layer.isObjectLayer) {
-            for (const obj of layer.objects)
-                if (obj.name == name)
-                    return obj
-        }
-    }
+		if (layer.isGroupLayer) {
+			const obj = findObjectByName(layer, name);
+			if (obj) {
+				return obj;
+			}
+		} else if (layer.isObjectLayer) {
+			for (const obj of layer.objects) {
+				if (obj.name == name) {
+					return obj;
+				}
+			}
+		}
+	}
 
-    return null
+	return null;
 }
 
-let followWarp = tiled.registerAction('FollowWarp', function(action) {
-    const map = tiled.activeAsset
-    if (!map.isTileMap) {
-        tiled.alert("Not a tile map!")
-        return
-    }
+let followWarp = tiled.registerAction("FollowWarp", function(/* action */) {
+	const map = tiled.activeAsset;
+	if (!map.isTileMap) {
+		tiled.alert("Not a tile map!");
+		return;
+	}
 
-    const selectedObject = map.selectedObjects[0]
-    if (!selectedObject) {
-        tiled.alert("No object selected!")
-        return
-    }
+	const selectedObject = map.selectedObjects[0];
+	if (!selectedObject) {
+		tiled.alert("No object selected!");
+		return;
+	}
 
-    const destMapProperty = selectedObject.property("DEST_MAP")
-    if (!destMapProperty) {
-        tiled.alert("No DEST_MAP property!")
-        return
-    }
+	const destMapProperty = selectedObject.property("DEST_MAP");
+	if (!destMapProperty) {
+		tiled.alert("No DEST_MAP property!");
+		return;
+	}
 
-    const mapsPath = map.fileName.substr(0, map.fileName.indexOf("maps/") + 5)
-    const destinationMapFile = mapsPath + destMapProperty + ".tmx"
-    const destinationName = selectedObject.property("DEST_NAME")
+	const mapsPath = map.fileName.substr(0, map.fileName.indexOf("maps/") + 5);
+	const destinationMapFile = mapsPath + destMapProperty + ".tmx";
+	const destinationName = selectedObject.property("DEST_NAME");
 
-    const destinationMap = tiled.open(destinationMapFile)
-    if (!destinationMap)
-        return
+	const destinationMap = tiled.open(destinationMapFile);
+	if (!destinationMap) {
+		return;
+	}
 
-    if (destinationName) {
-        const object = findObjectByName(destinationMap, destinationName)
-        if (!object) {
-            tiled.alert("Failed to find object named '" + destinationName + "'")
-            return
-        }
+	if (destinationName) {
+		const object = findObjectByName(destinationMap, destinationName);
+		if (!object) {
+			tiled.alert("Failed to find object named '" + destinationName + "'");
+			return;
+		}
 
-        tiled.mapEditor.currentMapView.centerOn(object.x, object.y)
-        destinationMap.selectedObjects = [object]
-    }
-})
-followWarp.text = "Follow Selected Warp"
-followWarp.shortcut = "Ctrl+F"
+		tiled.mapEditor.currentMapView.centerOn(object.x, object.y);
+		destinationMap.selectedObjects = [object];
+	}
+});
+followWarp.text = "Follow Selected Warp";
+followWarp.shortcut = "Ctrl+F";
 
 tiled.extendMenu("Map", [
-    { separator: true },
-    { action: "FollowWarp" },
-])
+	{ separator: true },
+	{ action: "FollowWarp" },
+]);
