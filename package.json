@@ -1,0 +1,29 @@
+{
+  "name": "tiled-extensions",
+  "version": "1.0.0",
+  "description": "A repository with Tiled extensions",
+  "dependencies": {
+    "eslint-config-standard-js": "^1.2.1",
+    "eslint": "^7.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapeditor/tiled-extensions.git"
+  },
+  "keywords": [
+    "javascript",
+    "tiled-map-editor",
+    "extensions",
+    "examples"
+  ],
+  "author": "Thorbjørn Lindeijer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mapeditor/tiled-extensions/issues"
+  },
+  "homepage": "https://github.com/mapeditor/tiled-extensions#readme"
+}

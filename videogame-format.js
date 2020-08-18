@@ -6,6 +6,8 @@
  * method from the videogame library (https://github.com/diogoeichert/videogame)
  */
 
+/* global tiled, FileInfo, TextFile */
+
 tiled.registerMapFormat("videogame", {
 	name: "videogame map format",
 	extension: "json",
