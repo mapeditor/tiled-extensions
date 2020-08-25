@@ -31,6 +31,12 @@ If you have written an extension that you think makes a great example or would
 be generally useful for others, please don't hesitate to open a pull request to
 have it added to this repository or to the list below!
 
+Please run the linter to check for avoidable issues in the .js files:
+```
+npm install
+npx eslint [your-extension.js]
+```
+
 ## Awesome Tiled Extensions
 
 ### JavaScript
