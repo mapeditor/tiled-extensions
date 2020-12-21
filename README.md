@@ -41,6 +41,7 @@ npx eslint [your-extension.js]
 
 ### JavaScript
 
+* [djedditt/tiled-to-gba-export](https://github.com/djedditt/tiled-to-gba-export)
 * [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)
 * [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)
 * [sergkr/tiled-bulk-animations](https://github.com/sergkr/tiled-bulk-animations)
