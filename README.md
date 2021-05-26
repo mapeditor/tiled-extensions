@@ -41,10 +41,14 @@ npx eslint [your-extension.js]
 
 ### JavaScript
 
-* [djedditt/tiled-to-gba-export](https://github.com/djedditt/tiled-to-gba-export)
-* [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)
-* [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)
-* [sergkr/tiled-bulk-animations](https://github.com/sergkr/tiled-bulk-animations)
+* [djedditt/tiled-to-gba-export](https://github.com/djedditt/tiled-to-gba-export)<br>
+  Export tilemaps to **GBA source files**
+* [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)<br>
+  Export tilemaps and tilesets to **Godot** format
+* [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)<br>
+  Export to **Angband.online**
+* [sergkr/tiled-bulk-animations](https://github.com/sergkr/tiled-bulk-animations)<br>
+  Efficiently setup **bulk animations**
 
 ### Python
 
