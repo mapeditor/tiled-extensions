@@ -19,11 +19,8 @@ When you want to add these extensions to your Tiled installation:
 
   (Alternatively, clone this git repository into the extensions directory)
 
-* When using a version older than Tiled 1.3.3, restart Tiled.
-
-  (This was necessary because Tiled only watched existing scripts for
-  changes. No restarts are necessary when making changes to existing script
-  files, since it will trigger an automatic reloading of the scripts.)
+Project-specific extensions can be placed in a directory in your project
+instead, to make it easier to share them with teammates!
 
 ## Contributing
 
@@ -39,19 +36,17 @@ npx eslint [your-extension.js]
 
 ## Awesome Tiled Extensions
 
-### JavaScript
+Noteworthy extensions in other repositories:
 
 * [djedditt/tiled-to-gba-export](https://github.com/djedditt/tiled-to-gba-export)<br>
   Export tilemaps to **GBA source files**
 * [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)<br>
   Export tilemaps and tilesets to **Godot** format
+* [samhocevar/tiled-pico8](https://github.com/samhocevar/tiled-pico8)<br>
+  Import/export to **PICO-8**
 * [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)<br>
   Export to **Angband.online**
 * [sergkr/tiled-bulk-animations](https://github.com/sergkr/tiled-bulk-animations)<br>
   Efficiently setup **bulk animations**
-
-### Python
-
-Tiled can also be [extended using Python](https://doc.mapeditor.org/en/stable/manual/python/). While this is limited to adding custom map formats, does not currently work on macOS or the snap releases and requires a specific Python version to be installed on the system, it still may be a valid option especially while some features are still lacking for JavaScript extensions. Here's a list of noteworthy Python extensions:
-
-* [samhocevar/tiled-pico8](https://github.com/samhocevar/tiled-pico8) (see [bjorn/tiled#2781](https://github.com/bjorn/tiled/issues/2781))
+* [eishiya/tiled-scripts](https://github.com/eishiya/tiled-scripts)<br>
+  Assorted scripts
