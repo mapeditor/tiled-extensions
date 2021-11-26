@@ -50,3 +50,5 @@ Noteworthy extensions in other repositories:
   Efficiently setup **bulk animations**
 * [eishiya/tiled-scripts](https://github.com/eishiya/tiled-scripts)<br>
   Assorted scripts
+* [fordesoft/cliff-generator](https://github.com/Fordesoft/cliff-generator)<br>
+  Paint ground tiles, then instantly turn them into 9-slice cliffs. Most useful for top-down RPGs.
