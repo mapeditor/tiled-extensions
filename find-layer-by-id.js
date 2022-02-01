@@ -46,7 +46,7 @@ let selectLayerById = tiled.registerAction("SelectLayerById", function(/* action
 		return;
 	}
 
-	map.currentLayer = layer
+	map.currentLayer = layer;
 });
 selectLayerById.text = "Select Layer by ID";
 selectLayerById.shortcut = "Ctrl+Alt+L";
