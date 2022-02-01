@@ -13,6 +13,7 @@
 tiled.registerTool("PaintTileRectangle", {
 	name: "Paint Tile Rectangle",
 	icon: "tile-rectangle.svg",
+	usesSelectedTiles: true,
 
 	activated() {
 		this.edit = null;
