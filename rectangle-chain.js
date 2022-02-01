@@ -11,7 +11,7 @@ tiled.registerTool("RectangleChain", {
 	name: "Draw Rectangle Chain",
 	icon: "rectangle-chain.svg",
 
-	mouseMoved(x, y, /* modifiers */) {
+	mouseMoved(x, y /*, modifiers */) {
 		if (!this.pressed) {
 			return;
 		}
@@ -42,7 +42,7 @@ tiled.registerTool("RectangleChain", {
 		}
 	},
 
-	mousePressed(button, x, y, /* modifiers */) {
+	mousePressed(button, x, y /*, modifiers */) {
 		this.pressed = true;
 		this.x = x;
 		this.y = y;
