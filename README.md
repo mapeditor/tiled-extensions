@@ -48,6 +48,8 @@ Noteworthy extensions in other repositories:
   Export to **Angband.online**
 * [sergkr/tiled-bulk-animations](https://github.com/sergkr/tiled-bulk-animations)<br>
   Efficiently setup **bulk animations**
+* [eishiya/tiled-expand-autotile](https://github.com/eishiya/tiled-expand-autotile)<br>
+  Expand **RPG Maker Autotile** tilesets
 * [eishiya/tiled-scripts](https://github.com/eishiya/tiled-scripts)<br>
   Assorted scripts
 * [fordesoft/cliff-generator](https://github.com/Fordesoft/cliff-generator)<br>
