@@ -1,3 +1,5 @@
+/// <reference types="@mapeditor/tiled-api" />
+
 /*
  * tile-rectangle.js
  *
@@ -16,13 +18,14 @@ tiled.registerTool("PaintTileRectangle", {
 	usesSelectedTiles: true,
 
 	activated() {
-		this.edit = null;
+		this.preview = new TileMap();
 	},
 	tilePositionChanged(curX, curY) {
 		if (!tiled.mapEditor.currentBrush) {
 			return;
 		}
 
+		/** @type TileLayer */
 		const brush = tiled.mapEditor.currentBrush.layerAt(0);
 		if (!brush || brush.width < 1 || brush.height < 1) {
 			return;

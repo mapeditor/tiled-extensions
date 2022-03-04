@@ -1,3 +1,5 @@
+/// <reference types="@mapeditor/tiled-api" />
+
 /*
  * find-object-by-id.js
  *

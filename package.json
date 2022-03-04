@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A repository with Tiled extensions",
   "devDependencies": {
+    "@mapeditor/tiled-api": "^1.8.1",
     "eslint": "^8.8.0"
   },
   "scripts": {

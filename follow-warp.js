@@ -1,3 +1,5 @@
+/// <reference types="@mapeditor/tiled-api" />
+
 /*
  * follow-warp.js
  *
@@ -12,6 +14,10 @@
 
 /* global tiled */
 
+/**
+ * @param thing {TileMap | GroupLayer}
+ * @param name {string}
+ */
 function findObjectByName(thing, name) {
 	for (let i = thing.layerCount - 1; i >= 0; i--) {
 		const layer = thing.layerAt(i);
@@ -34,6 +40,7 @@ function findObjectByName(thing, name) {
 }
 
 let followWarp = tiled.registerAction("FollowWarp", function(/* action */) {
+	/** @type TileMap */
 	const map = tiled.activeAsset;
 	if (!map.isTileMap) {
 		tiled.alert("Not a tile map!");
@@ -56,6 +63,7 @@ let followWarp = tiled.registerAction("FollowWarp", function(/* action */) {
 	const destinationMapFile = mapsPath + destMapProperty + ".tmx";
 	const destinationName = selectedObject.property("DEST_NAME");
 
+	/** @type TileMap */
 	const destinationMap = tiled.open(destinationMapFile);
 	if (!destinationMap) {
 		return;

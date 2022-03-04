@@ -1,3 +1,5 @@
+/// <reference types="@mapeditor/tiled-api" />
+
 /*
  * rectangle-chain.js
  *
@@ -24,6 +26,7 @@ tiled.registerTool("RectangleChain", {
 		this.y = y;
 
 		if (this.distance > 32) {
+			/** @type ObjectGroup */
 			var objectLayer = this.map.currentLayer;
 
 			if (objectLayer && objectLayer.isObjectLayer) {
