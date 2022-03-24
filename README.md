@@ -40,7 +40,7 @@ Noteworthy extensions in other repositories:
 
 * [djedditt/tiled-to-gba-export](https://github.com/djedditt/tiled-to-gba-export)<br>
   Export tilemaps to **GBA source files**
-* [MikeMnD/tiled-to-godot-export](https://github.com/MikeMnD/tiled-to-godot-export)<br>
+* [mapeditor/tiled-to-godot-export](https://github.com/mapeditor/tiled-to-godot-export)<br>
   Export tilemaps and tilesets to **Godot** format
 * [samhocevar/tiled-pico8](https://github.com/samhocevar/tiled-pico8)<br>
   Import/export to **PICO-8**
