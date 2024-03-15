@@ -7,8 +7,6 @@
  * the map.
  */
 
-/* global tiled, MapObject */
-
 tiled.registerTool("RectangleChain", {
 	name: "Draw Rectangle Chain",
 	icon: "rectangle-chain.svg",

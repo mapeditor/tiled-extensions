@@ -10,8 +10,6 @@
  * brush is repeated in all directions.
  */
 
-/* global tiled, TileLayer, TileMap */
-
 tiled.registerTool("PaintTileRectangle", {
 	name: "Paint Tile Rectangle",
 	icon: "tile-rectangle.svg",

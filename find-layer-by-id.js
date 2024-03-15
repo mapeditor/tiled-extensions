@@ -8,8 +8,6 @@
  * you know its ID.
  */
 
-/* global tiled */
-
 function findLayerById(thing, id) {
 	for (let i = thing.layerCount - 1; i >= 0; i--) {
 		const layer = thing.layerAt(i);

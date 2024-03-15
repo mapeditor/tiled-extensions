@@ -12,8 +12,6 @@
  * with some adjustments it probably could!
  */
 
-/* global tiled */
-
 /**
  * @param thing {TileMap | GroupLayer}
  * @param name {string}

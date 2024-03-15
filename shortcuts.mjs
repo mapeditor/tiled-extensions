@@ -18,8 +18,6 @@
  * the Preferences dialog.
  */
 
-/* global tiled */
-
 /**
  * @param {Tileset} tileset
  */

@@ -9,8 +9,6 @@
  * automatically on save.
  */
 
-/* global tiled */
-
 /**
  * @param {TileMap} map
  */

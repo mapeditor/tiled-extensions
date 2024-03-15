@@ -11,8 +11,6 @@
  * function to work properly for isometric maps.
  */
 
-/* global tiled */
-
 function findObjectById(thing, id) {
 	for (let i = thing.layerCount - 1; i >= 0; i--) {
 		const layer = thing.layerAt(i);

@@ -16,13 +16,18 @@ module.exports = {
 			"error",
 			"unix"
 		],
-		"quotes": [
-			"error",
-			"double"
-		],
 		"semi": [
 			"error",
 			"always"
 		]
+	},
+	"globals": {
+		"File": "readonly",
+		"FileInfo": "readonly",
+		"MapObject": "readonly",
+		"TextFile": "readonly",
+		"TileLayer": "readonly",
+		"TileMap": "readonly",
+		"tiled": "readonly"
 	}
 };
