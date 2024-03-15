@@ -33,7 +33,7 @@
 	via Search Actions.
 */
 
-let addOutputIndex = tiled.registerAction("AddOutputIndex", function(action) {	
+let addOutputIndex = tiled.registerAction("AddOutputIndex", function(/* action */) {
 	function fixIndex(map) {
 		let newIndexCharacter = "0";
 		let newIndex = newIndexCharacter;
