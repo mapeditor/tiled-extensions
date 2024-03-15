@@ -67,7 +67,7 @@ let addOutputIndex = tiled.registerAction("AddOutputIndex", function(action) {
 		
 		if(hasNamedIndices && layersToRename.length > 0) {
 			map.macro("Add Output Index", function() {
-				for(layer of layersToRename)
+				for(let layer of layersToRename)
 					layer.name = layer.name.replace("output_", "output"+newIndex+"_");
 				tiled.log("Renamed "+layersToRename.length+" layer(s) in "+map.fileName);
 			});
@@ -81,7 +81,7 @@ let addOutputIndex = tiled.registerAction("AddOutputIndex", function(action) {
 	
 	//Helper function that returns a TileMap if it's already open
 	function getOpenMap(file) {
-		for(asset of tiled.openAssets) {
+		for(let asset of tiled.openAssets) {
 			if(asset.fileName == file && asset.isTileMap)
 				return asset;
 		}
@@ -97,7 +97,7 @@ let addOutputIndex = tiled.registerAction("AddOutputIndex", function(action) {
 		checkedFolders[canonicalPath] = true;
 		//First, get all the files in this folder
 		let files = File.directoryEntries(folder, File.Files | File.Readable | File.NoDotAndDotDot);
-		for(file of files) {
+		for(let file of files) {
 			let path = folder+"/"+file;
 			let format = tiled.mapFormatForFile(path);
 			if(format) {
@@ -110,7 +110,7 @@ let addOutputIndex = tiled.registerAction("AddOutputIndex", function(action) {
 		}
 		//Then, look at any subfolders:
 		files = File.directoryEntries(folder, File.Dirs | File.Readable | File.NoDotAndDotDot);
-		for(file of files) {
+		for(let file of files) {
 			collectMaps(folder+"/"+file);
 		}
 	}
@@ -121,13 +121,13 @@ let addOutputIndex = tiled.registerAction("AddOutputIndex", function(action) {
 	else
 		folders = [tiled.promptDirectory(null, "Select a directory to scan")];
 	
-	for(folder of folders)
+	for(let folder of folders)
 		collectMaps(folder);
 	
 	let previousAsset = tiled.activeAsset;
 	let totalLayersChanged = 0;
 	
-	for(map of maps) {
+	for(let map of maps) {
 		if(map.isTileMap) {
 			totalLayersChanged += fixIndex(map);
 		} else { //a path
