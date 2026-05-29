@@ -30,6 +30,7 @@ module.exports = {
 		"TextFile": "readonly",
 		"TileLayer": "readonly",
 		"TileMap": "readonly",
+		"Tile": "readonly",
 		"tiled": "readonly"
 	}
 };
