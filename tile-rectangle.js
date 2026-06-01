@@ -91,7 +91,13 @@ tiled.registerTool("PaintTileRectangle", {
 				}
 
 				const tile = brush.tileAt(brushX, brushY);
-				edit.setTile(x, y, tile);
+				const cell = brush.cellAt(brushX, brushY);
+				const flags =
+					(cell.flippedHorizontally ? Tile.FlippedHorizontally : 0)
+					+ (cell.flippedVertically ? Tile.FlippedVertically : 0)
+					+ (cell.flippedAntiDiagonally ? Tile.FlippedAntiDiagonally : 0)
+					+ (cell.rotatedHexagonal120 ? Tile.RotatedHexagonal120 : 0);
+				edit.setTile(x, y, tile, flags);
 			}
 		}
 
