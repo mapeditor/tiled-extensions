@@ -54,5 +54,7 @@ Noteworthy extensions in other repositories:
   Assorted scripts
 * [fordesoft/cliff-generator](https://github.com/Fordesoft/cliff-generator)<br>
   Paint ground tiles, then instantly turn them into 9-slice cliffs. Most useful for top-down RPGs.
+* [Tileset Collision Generator](https://sanjox.itch.io/godot-tiled-collision-generator)<br>
+  Automatic collision generation for whole tilesets.
 
 Also check out my [starred Tiled extensions](https://github.com/stars/bjorn/lists/tiled-extensions).
