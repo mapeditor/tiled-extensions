@@ -36,7 +36,7 @@ npx eslint [your-extension.js]
 
 ## Awesome Tiled Extensions
 
-Noteworthy extensions in other repositories:
+### Other Repositories
 
 * [djedditt/tiled-to-gba-export](https://github.com/djedditt/tiled-to-gba-export)<br>
   Export tilemaps to **GBA source files**
@@ -46,7 +46,7 @@ Noteworthy extensions in other repositories:
   Import/export to **PICO-8**
 * [ilius33/TiledToAngbandExport](https://github.com/ilius33/TiledToAngbandExport)<br>
   Export to **Angband.online**
-* [sergkr/tiled-bulk-animations](https://github.com/sergkr/tiled-bulk-animations)<br>
+* [mapeditor/tiled-bulk-animations](https://github.com/mapeditor/tiled-bulk-animations)<br>
   Efficiently setup **bulk animations**
 * [eishiya/tiled-expand-autotile](https://github.com/eishiya/tiled-expand-autotile)<br>
   Expand **RPG Maker Autotile** tilesets
@@ -56,3 +56,8 @@ Noteworthy extensions in other repositories:
   Paint ground tiles, then instantly turn them into 9-slice cliffs. Most useful for top-down RPGs.
 
 Also check out my [starred Tiled extensions](https://github.com/stars/bjorn/lists/tiled-extensions).
+
+### Proprietary Extensions
+
+* [Tileset Collision Generator](https://sanjox.itch.io/godot-tiled-collision-generator)<br>
+  Automatic collision generation for whole tilesets.
