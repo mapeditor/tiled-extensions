@@ -6,6 +6,8 @@
  * method from the videogame library (https://github.com/diogoeichert/videogame)
  */
 
+// qmllint disable unqualified
+
 import Tiled
 
 MapFormat {

@@ -6,6 +6,8 @@
  * know its ID.
  */
 
+// qmllint disable unqualified
+
 import Tiled
 
 Extension {

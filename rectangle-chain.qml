@@ -5,6 +5,8 @@
  * the map.
  */
 
+// qmllint disable unqualified unresolved-type
+
 import Tiled
 
 Tool {

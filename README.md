@@ -26,6 +26,22 @@ When you want to add these extensions to your Tiled installation:
 Project-specific extensions can be placed in a directory in your project
 instead, to make it easier to share them with teammates!
 
+## Editor Support
+
+The QML extensions can be checked with qmllint and qmlls, the QML language
+server used by various editors to provide warnings and completion. For these
+tools to find the Tiled QML types, create a `.qmlls.ini` file in this
+directory that points at the QML type descriptions shipped with Tiled (or
+found in the install directory when building Tiled yourself):
+
+    [General]
+    no-cmake-calls=true
+    importPaths=/path/to/tiled/qml
+
+Access to the objects provided by the scripting host environment, like
+`tiled` and `TextFile`, is not known to these tools, which is why the
+extensions disable the `unqualified` warning category.
+
 ## Contributing
 
 If you have written an extension that you think makes a great example or would

@@ -33,6 +33,8 @@
 	the script via Search Actions.
 */
 
+// qmllint disable unqualified
+
 import Tiled
 
 Extension {

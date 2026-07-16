@@ -8,6 +8,8 @@
  * brush is repeated in all directions.
  */
 
+// qmllint disable unqualified unresolved-type
+
 import Tiled
 
 Tool {

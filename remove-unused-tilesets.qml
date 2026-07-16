@@ -7,6 +7,8 @@
  * on save (also requires adding "import QtQml").
  */
 
+// qmllint disable unqualified
+
 import Tiled
 
 Extension {

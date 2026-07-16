@@ -10,6 +10,8 @@
  * with some adjustments it probably could!
  */
 
+// qmllint disable unqualified
+
 import Tiled
 
 Extension {

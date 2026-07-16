@@ -20,6 +20,8 @@
  * declarative Action elements.
  */
 
+// qmllint disable unqualified
+
 import QtQml
 import Tiled
 
