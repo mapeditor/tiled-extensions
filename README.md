@@ -5,6 +5,10 @@ JavaScript](https://doc.mapeditor.org/en/stable/reference/scripting/). This
 repository provides a number of example extensions that can either be useful
 as-is or can provide a starting point when writing your own extensions.
 
+**Note:** This branch contains ports of the extensions to the declarative QML
+API and requires Tiled 1.13 or later. For versions of these extensions that
+are compatible with older Tiled versions, see the `master` branch.
+
 ## Installation
 
 When you want to add these extensions to your Tiled installation:
